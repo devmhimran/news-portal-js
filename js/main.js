@@ -69,6 +69,7 @@ const allNewsArticle = () =>{
 }
 allNewsArticle();
 const allArticle = (allNewsDataShow) =>{
+    preloader('none');
     const categoryCount = document.getElementById('category-count');
     categoryCount.innerHTML = allNewsDataShow.length;
     const newsDataDiv = document.getElementById('news-container');
